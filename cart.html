@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - StreetHood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>STREETHOOD</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#products" class="nav-link">Shop</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="index.html" class="icon-link">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="login.html" class="icon-link">
+                    <i class="fas fa-user user-icon"></i>
+                </a>
+                <a href="cart.html" class="icon-link cart-link">
+                    <i class="fas fa-shopping-cart cart-icon">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Page Content -->
+    <section class="cart-page">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+            
+            <div class="cart-content">
+                <div class="cart-items-section">
+                    <div id="cartItems" class="cart-items">
+                        <!-- Cart items will be loaded here -->
+                    </div>
+                    
+                    <div class="cart-empty" id="emptyCart" style="display: none;">
+                        <i class="fas fa-shopping-cart" style="font-size: 4rem; color: #ddd; margin-bottom: 1rem;"></i>
+                        <h3>Your cart is empty</h3>
+                        <p>Add some hoodies to get started!</p>
+                        <a href="index.html#products" class="btn-primary">Continue Shopping</a>
+                    </div>
+                </div>
+                
+                <div class="cart-summary" id="cartSummary" style="display: none;">
+                    <h3>Order Summary</h3>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping</span>
+                        <span id="shipping">$10.00</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Tax</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="total">$0.00</span>
+                    </div>
+                    
+                    <button class="btn-checkout" onclick="proceedToCheckout()">
+                        Proceed to Checkout
+                    </button>
+                    
+                    <div class="continue-shopping">
+                        <a href="index.html#products">
+                            <i class="fas fa-arrow-left"></i> Continue Shopping
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

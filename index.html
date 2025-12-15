@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAP</title>
+    <link rel="website icon" type="png" href="1.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation - Updated with proper links -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>STREETHOOD</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#products" class="nav-link">Shop</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <!-- Working Search -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search hoodies..." id="searchInput">
+                    <i class="fas fa-search search-icon" id="searchBtn"></i>
+                </div>
+                <!-- User Icon - Links to Login Page -->
+                <a href="login.html" class="icon-link">
+                    <i class="fas fa-user user-icon"></i>
+                </a>
+                <!-- Cart Icon - Links to Cart Page -->
+                <a href="cart.html" class="icon-link cart-link">
+                    <i class="fas fa-shopping-cart cart-icon">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </i>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Results Container -->
+    <div id="searchResults" class="search-results" style="display: none;">
+        <div class="container">
+            <h3>Search Results</h3>
+            <div id="searchResultsGrid" class="product-grid"></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>STREET MEETS COMFORT</h1>
+            <p>Premium hoodies designed for the modern urban lifestyle</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Shop Collection</button>
+                <button class="btn-secondary">New Drops</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="2 (7).png" alt="Hoodie Model">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Trending Now</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay in the Loop</h2>
+            <p>Get exclusive offers and be the first to know about new drops</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>STREETHOOD</h3>
+                    <p>Premium hoodies for the modern urban lifestyle.</p>
+                    <div class="social-links">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Men's Hoodies</a></li>
+                        <li><a href="#">Women's Hoodies</a></li>
+                        <li><a href="#">Limited Edition</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CAP. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
