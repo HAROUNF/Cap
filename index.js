@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Classic white Hoodie",
-        price: 89.99,
+        price: 19.99,
         image: "2 (1).png",
         colors: ["black", "gray", "navy"],
         category: "men"
@@ -11,7 +11,7 @@ const products = [
     {
         id: 2,
         name: "Classic Blue Hoodie",
-        price: 94.99,
+        price: 25.5,
         image: "2 (2).png",
         colors: ["gray", "black", "white"],
         category: "men"
@@ -19,15 +19,15 @@ const products = [
     {
         id: 3,
         name: "Premium Navy Hoodie",
-        price: 99.99,
+        price: 21.99,
         image: "2 (4).png",
         colors: ["navy", "black", "gray"],
-        category: "women"
+        category: "women and men"
     },
     {
         id: 4,
         name: "Limited Edition Red",
-        price: 119.99,
+        price: 59.99,
         image: "2 (7).png",
         colors: ["red", "black"],
         category: "limited",
@@ -36,7 +36,7 @@ const products = [
     {
         id: 5,
         name: "Vintage red Hoodie",
-        price: 84.99,
+        price: 23.99,
         image: "2 (6).png",
         colors: ["white", "gray", "black"],
         category: "women"
@@ -44,7 +44,7 @@ const products = [
     {
         id: 6,
         name: "Street Green Hoodie",
-        price: 89.99,
+        price: 14.99,
         image: "2 (5).png",
         colors: ["green", "black", "gray"],
         category: "men"
@@ -471,4 +471,5 @@ additionalStyles.textContent = `
         }
     }
 `;
+
 document.head.appendChild(additionalStyles);
