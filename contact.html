@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - StreetHood</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>STREETHOOD</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#products" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="index.html" class="icon-link">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a href="login.html" class="icon-link">
+                    <i class="fas fa-user user-icon"></i>
+                </a>
+                <a href="cart.html" class="icon-link cart-link">
+                    <i class="fas fa-shopping-cart cart-icon">
+                        <span class="cart-count" id="cartCount">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1>Get in Touch</h1>
+                <p>We'd love to hear from you! Help us improve our products and services.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>123 Fashion Street<br>New York, NY 10001<br>United States</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567<br>Mon-Fri: 9AM-6PM EST<br>Sat-Sun: 10AM-4PM EST</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>hello@streethood.com<br>support@streethood.com<br>We reply within 24 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Help Us Improve</h2>
+                <p>Your feedback is valuable to us. Please share your thoughts about our products and website.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3>Your Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Type -->
+                    <div class="form-section">
+                        <h3>What would you like to tell us about?</h3>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="feedbackType" value="products">
+                                <span class="checkmark"></span>
+                                Product Quality & Design
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="feedbackType" value="website">
+                                <span class="checkmark"></span>
+                                Website Experience
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="feedbackType" value="shipping">
+                                <span class="checkmark"></span>
+                                Shipping & Delivery
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="feedbackType" value="customer-service">
+                                <span class="checkmark"></span>
+                                Customer Service
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="feedbackType" value="pricing">
+                                <span class="checkmark"></span>
+                                Pricing & Value
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox" name="feedbackType" value="other">
+                                <span class="checkmark"></span>
+                                Other
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Product Feedback -->
+                    <div class="form-section" id="productFeedback">
+                        <h3>Product Feedback</h3>
+                        <div class="form-group">
+                            <label>How would you rate our products overall?</label>
+                            <div class="rating-container">
+                                <div class="star-rating" data-rating="product-rating">
+                                    <i class="far fa-star" data-value="1"></i>
+                                    <i class="far fa-star" data-value="2"></i>
+                                    <i class="far fa-star" data-value="3"></i>
+                                    <i class="far fa-star" data-value="4"></i>
+                                    <i class="far fa-star" data-value="5"></i>
+                                </div>
+                                <span class="rating-text">Click to rate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>What products would you like to see more of?</label>
+                            <textarea name="productSuggestions" placeholder="Tell us about colors, styles, sizes, or specific features you'd like..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>How can we improve our product quality?</label>
+                            <textarea name="qualityImprovements" placeholder="Share your ideas for better materials, fit, comfort, etc."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Website Feedback -->
+                    <div class="form-section" id="websiteFeedback">
+                        <h3>Website Feedback</h3>
+                        <div class="form-group">
+                            <label>How would you rate your website experience?</label>
+                            <div class="rating-container">
+                                <div class="star-rating" data-rating="website-rating">
+                                    <i class="far fa-star" data-value="1"></i>
+                                    <i class="far fa-star" data-value="2"></i>
+                                    <i class="far fa-star" data-value="3"></i>
+                                    <i class="far fa-star" data-value="4"></i>
+                                    <i class="far fa-star" data-value="5"></i>
+                                </div>
+                                <span class="rating-text">Click to rate</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>What features would improve our website?</label>
+                            <textarea name="websiteFeatures" placeholder="Suggest new features, better navigation, faster loading, etc."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Did you encounter any problems on our website?</label>
+                            <textarea name="websiteProblems" placeholder="Describe any bugs, broken links, or confusing parts..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- General Feedback -->
+                    <div class="form-section">
+                        <h3>Your Message</h3>
+                        <div class="form-group">
+                            <label for="message">Tell us everything you think would help us improve *</label>
+                            <textarea id="message" name="message" required 
+                                placeholder="Share your thoughts, suggestions, complaints, or ideas... What would make you love StreetHood even more?"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Additional Comments -->
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="additional">Anything else you'd like to share?</label>
+                            <textarea id="additional" name="additional" 
+                                placeholder="Questions, compliments, partnership ideas, or anything else..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="form-section">
+                        <label class="checkbox-item newsletter-optin">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            I'd like to receive updates about new products and improvements
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Feedback
+                    </button>
+                    
+                    <div class="form-note">
+                        <p><i class="fas fa-info-circle"></i> We read every message and use your feedback to make StreetHood better. You'll receive a response within 24 hours.</p>
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Thank You!</h3>
+                    <p>Your feedback has been sent successfully. We appreciate you taking the time to help us improve!</p>
+                    <button onclick="resetForm()" class="btn-secondary">Send Another Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does shipping take?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Standard shipping takes 5-7 business days. Express shipping is available for 2-3 business days delivery.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your return policy?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer 30-day returns on all unworn items. Please see our full return policy for details.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you ship internationally?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We ship to over 20 countries worldwide. International shipping rates apply.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I know what size to order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Check our detailed size guide on each product page. If you're between sizes, we recommend sizing up for a relaxed fit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjEiTiA3NMKwMDAnMjEuNiJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>STREETHOOD</h3>
+                    <p>Premium hoodies for the modern urban lifestyle.</p>
+                    <div class="social-links">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Men's Hoodies</a></li>
+                        <li><a href="#">Women's Hoodies</a></li>
+                        <li><a href="#">Limited Edition</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 StreetHood. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
